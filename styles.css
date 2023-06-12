@@ -1,0 +1,687 @@
+/* global defaults  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.4s;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  list-style: none;
+}
+
+/* -------- hero section styles -------- */
+.nav-hero-container {
+  background-image: url("./assets/Navigation-banner.jpg");
+  background-color: #cccccc;
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-top: 10px;
+}
+
+/* navbar icon */
+#nav-icon {
+  width: 150px;
+  height: 100px;
+  object-fit: contain;
+}
+
+/* nav bar container */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 100px;
+}
+
+.nav-right {
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+}
+
+.navbar-toggle {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 24px;
+}
+.nav-list-container {
+  display: flex;
+  margin: 10px 25px;
+  padding: 10px;
+}
+
+
+.nav-list-container a {
+  float: left;
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  color: #57575b;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  border-right: 1.2px solid grey;
+  display: inline-block;
+  padding: 0px 15px;
+}
+
+.active {
+  display: block;
+  width: 20%;
+}
+
+.social-icon {
+  padding: 0px 5px;
+}
+
+/* hero left section */
+.hero-left {
+  width: fit-content;
+  padding: 100px 100px;
+}
+
+.hero-text {
+  width: fit-content;
+  font-size: 40px;
+  font-weight: 500;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px 15px;
+  background-color: #468045;
+  color: #fff;
+}
+
+.hero-text:first-child {
+  background-color: #fff;
+  color: #57575b;
+}
+
+#hero-left-btn {
+  background-color: #468045;
+  padding: 12px 25px 12px 20px;
+  border-style: none;
+  border-radius: 50px;
+  margin-top: 50px;
+}
+#hero-btn-left-text {
+  color: #fff;
+}
+
+/* -------- about us section styling starts here -------- */
+.about-us-section {
+  display: flex;
+  padding: 50px 50px;
+}
+
+.about-us-section-left {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  row-gap: 8px;
+}
+
+.about-us-section-left,
+.about-us-section-right {
+  padding: 40px 50px;
+}
+
+.black-left-text,
+.grey-left-text {
+  font-size: 32px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.grey-left-text {
+  color: #57575b;
+}
+
+.about-us-section-right {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  width: 60%;
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.read-more-btn {
+  margin: 15px 0px;
+  padding: 10px 20px;
+  background-color: #468045;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+  border-radius: 50px;
+  column-gap: 20px;
+}
+
+.about-us-btn-text {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* -------- Our services section -------- */
+.services-section {
+  background-image: url("./assets/Services-banner.jpg");
+  background-color: #cccccc;
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 40px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0px 50px 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#our-services-label {
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 32px;
+}
+
+.service-icon {
+  width: 150px;
+  height: 150px;
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 20px;
+  color: #fff;
+}
+
+.services-container {
+  margin: 50px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: auto;
+  margin: 80px 0px;
+  justify-content: center;
+  row-gap: 50px;
+  column-gap: 50px;
+}
+
+.meet-doctors-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0px;
+}
+
+#meet-doctors-text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 32px;
+  margin: 0px 0px 50px 0px;
+}
+
+.doctor-profiles-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.doctor-profile-image {
+  width: 250px;
+  height: 300px;
+  object-fit: contain;
+}
+
+.overlay-container {
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+  position: relative;
+}
+
+.green-overlay {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: rgba(0, 128, 0, 0.5);
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+
+.overlay-container:hover .green-overlay {
+  height: 100%;
+}
+
+/* -------- Testimonials section -------- */
+.testimonials-section {
+  background-image: url("./assets/Testimonial-banner.jpg");
+  background-color: #cccccc;
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 50px 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#testimonial-header-text {
+  font-size: 32px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.testimony-name {
+  font-style: italic;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: medium;
+  font-weight: 600;
+  color: #000;
+}
+
+.testimonial-item-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0px;
+}
+
+.testimonial-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0px;
+}
+
+.testimonial-profile-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border-color: #57575b;
+  border-width: 2px;
+  border-style: solid;
+  object-fit: contain;
+}
+
+.testimonial-text {
+  padding: 20px 80px;
+  text-align: center;
+}
+
+.testimonial-nav-btn {
+  padding: 8px 9px;
+  border-radius: 50%;
+  border-width: 2px;
+  border-style: solid;
+  font-size: larger;
+  font-weight: 600;
+  border-color: #57575b;
+  display: inline-block;
+}
+
+.testimonial-nav-btn a {
+  text-decoration: none;
+}
+
+/* -------- contact us section styles starts here --------  */
+
+.contact-us-section {
+  background-image: url("./assets/Contact-US-banner.jpg");
+  background-color: #cccccc;
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 150px;
+}
+
+.contact-us-section form {
+  width: 60%;
+  display: flex;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+.contact-us-section p:nth-of-type(3) {
+  margin: 0px 0px 15px 0px;
+}
+
+.form-group {
+  width: 100%;
+  overflow: hidden;
+}
+
+.form-input {
+  border-style: none;
+  padding: 4px 10px;
+  margin: 4px 0px;
+  width: 100%;
+}
+
+#contact-us-form-label {
+  font-size: 24px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 10px 0px;
+}
+
+.contact-us-form-message {
+  font-size: 12px;
+  color: #57575b;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* -------- footer css starts here -------- */
+footer {
+  background-color: #2d2d2d;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.logo-footer-copyright-text-container {
+  padding: 40px 20px 20px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#footer-logo {
+  width: 150px;
+  height: auto;
+  margin: 0px 0px 50px 0px;
+  object-fit: contain;
+}
+
+#copy-right-message {
+  font-size: 8px;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer p {
+  display: flex;
+  column-gap: 8px;
+  font-size: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer p:nth-of-type(1) {
+  font-size: 12px;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer p a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer p span {
+  color: #fff;
+}
+
+.links-container {
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 5px;
+}
+
+.contacts-options-container {
+  margin: 0px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.row-contacts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts-icons {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+
+.contact-item {
+  display: flex;
+  margin: 10px 10px;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.contact-item p {
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
+}
+
+.contact-item p:nth-of-type(2) {
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: xx-small;
+}
+
+.contact-details {
+  align-self: flex-end;
+}
+.social-icons-navigate-container {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: auto;
+}
+
+.footer-social-icon {
+  width: 15px;
+  margin-right: 5px;
+  height: 15px;
+}
+.navigate-top-btn {
+  border: 2px solid grey;
+  padding: 5px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 900px) {
+  /* Adjustments for smaller screens */
+
+  .nav{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+  }
+  #nav-icon{
+    width: 120px;
+    height: 100px;
+    object-fit: contain;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 20px;
+  }
+
+  .nav-right{
+    position: absolute;
+    top: 40px;
+    right:0px;
+    display: flex;
+    height: auto;
+    background-color: #fff;
+    align-items: flex-end;
+  }
+
+  .nav-list-container{
+    float: right;
+    margin-top: 20px;
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+    align-items: flex-end;
+  }
+
+  .nav-list-container:not(.active) {
+    display: none;
+  }
+
+  .nav-list-container a{
+    border: none;
+    padding: 8px 5px;
+  }
+  .social-icons-container{
+    display: none;
+  }
+  .navbar-toggle{
+    display: inline-block;
+  } 
+  .hero-text{
+    font-size: 24px;
+  }
+
+  .hero-left {
+    width: fit-content;
+    padding: 120px 50px 50px 50px;
+  }
+  
+
+  #hero-left-btn {
+    background-color: #468045;
+    padding: 8px 15px 8px 15px;
+    border-style: none;
+    border-radius: 50px;
+    margin-top: 50px;
+  }
+
+
+  /*  about us section */
+  .about-us-section {
+    display: flex;
+    padding: 30px 30px;
+  }
+
+  .about-us-section-left {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    row-gap: 8px;
+  }
+
+.about-us-section-left,
+.about-us-section-right {
+  padding: 20px 30px;
+}
+
+.black-left-text,
+.grey-left-text {
+  font-size: 24px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.doctor-profiles-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.testimonials-section {
+  background-image: url("./assets/Testimonial-banner.jpg");
+  background-color: #cccccc;
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 30px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial-text {
+  padding: 20px 40px;
+  text-align: center;
+}
+
+.contact-us-section form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+.read-more-btn{
+  padding: 10px 15px;
+  width: fit-content;
+}
+
+footer{
+  width: 100%;
+}
+
+.logo-footer-copyright-text-container {
+  width: 33%;
+  padding: 40px 20px 20px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.links-container{
+  width:33%;
+  padding:0;
+  margin: 0;
+}
+
+#footer-logo {
+  width: 100%;
+  height: auto;
+  margin: 0px 0px 50px 0px;
+  object-fit: contain;
+}
+
+#copy-right-message{
+  position: absolute;
+  bottom:0;
+  right:-50%
+}
+.contacts-options-container{
+  width: 33%;
+  max-width: fit-content;
+  flex-wrap: wrap;
+}
+.row-contacts{
+  flex-wrap: wrap;
+}
+
+.social-icons-navigate-container {
+  width:10%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: auto;
+}
+
+}
